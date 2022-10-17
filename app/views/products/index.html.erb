@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <!-- <title><%#= @title %></title> -->
+    <%= render_partial "base/_head.html.erb" %>
+  </head>
+  <body>
+    <div>
+      <h1><%= @title %></h1>
+      <p><a href="/products/new">Create a new product</a></p>
+      <ul>
+        <% @products.each do |product| %>
+          <li>
+            <a href="/products/<%= product.id %>">
+              <%= "#{product.id} - #{product.name}" %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+      <a href="/products/new" style="background:#ddd;padding:9px;">Create New Product</a>
+    </div>
+  </body>
+</html>

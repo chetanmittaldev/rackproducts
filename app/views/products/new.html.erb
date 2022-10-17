@@ -1,0 +1,29 @@
+<!-- <html> -->
+<!--   <head> -->
+<!--     &#60;&#33;&#45;&#45; <title><%#= @title %></title> &#45;&#45;&#62; -->
+<!--   </head> -->
+<!--   <body> -->
+<!--     <div> -->
+<!--       <h1><%#= @title %></h1> -->
+<!--       <form action="/products" method="POST"> -->
+<!--         &#60;&#33;&#45;&#45; we'll worry about the form in the next post &#45;&#45;&#62; -->
+<!--       </form> -->
+<!--     </div> -->
+<!--   </body> -->
+<!-- </html> -->
+
+<html>
+  <%= render_partial "base/_head.html.erb" %>
+  <body>
+    <div>
+      <h1><%= @title %></h1>
+      <form action="/products" method="POST">
+        <div>
+          <label for="product_name">The product's name</label>
+          <input type="text" name="product[name]" id="product_name">
+        </div>
+        <input type="submit" name="commit" value="create">
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+---
+Product_1: !ruby/object:Product
+  id: 1
+  name: This is a new product
+Product_2: !ruby/object:Product
+  id: 2
+  name: This is a new second product
+Product_3: !ruby/object:Product
+  id: 3
+  name: Discover Zammad
+Product_4: !ruby/object:Product
+  id: 4
+  name: This is the ***in 4th product created via form
